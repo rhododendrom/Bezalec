@@ -1,0 +1,11 @@
+Štartna številka;Ime in priimek;Poklic;Klub;Kategorija;Spol;Čas
+2;tekmovalec2;tehnik;klub2;2;ženski;hh:mm:ss
+5;tekmovalec5;tehnik;klub4;1;ženski;hh:mm:ss
+6;tekmovalec6;policaj;klub2;2;ženski;hh:mm:ss
+9;tekmovalec9;zdravnik;klub5;1;ženski;02:30:55
+10;tekmovalec10;gasilec;klub7;2;ženski;hh:mm:ss
+7;tekmovalec7;zdravnik;klub2;2;moški;00:27:40
+8;tekmovalec8;tehnik;klub1;1;moški;00:29:28
+4;tekmovalec4;zdravnik;klub3;1;moški;00:48:39
+3;tekmovalec3;zdravnik;klub1;1;moški;00:48:44
+1;tekmovalec1;zdravnik;klub1;1;moški;01:10:59
