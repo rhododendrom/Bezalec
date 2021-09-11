@@ -18,7 +18,7 @@ KategorijaEdit::~KategorijaEdit()
 void KategorijaEdit::loadKategorije()
 {
     QString data;
-    QFile importedCSV("kategorije.txt");
+    QFile importedCSV("data/kategorije.txt");
     QStringList rowOfData;
     QStringList rowDataFull;
     if (importedCSV.open(QFile::ReadOnly)){
@@ -50,7 +50,7 @@ void KategorijaEdit::on_buttonBox_accepted()
 {
     //napolni prejšnje podatke
     qDebug() << "Shrani textedit v file, Bom probal napolnit";
-    QFile file("kategorije.txt");
+    QFile file("data/kategorije.txt");
     QTextStream data( &file );
     QString plainTextEditContents = ui->textEdit->toPlainText();
     lines = plainTextEditContents.split("\n");

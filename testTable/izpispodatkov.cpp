@@ -12,7 +12,7 @@ Izpispodatkov::Izpispodatkov(QWidget *parent) : QDialog(parent), ui(new Ui::izpi
     //std::sort(kategorijeItems.begin(),kategorijeItems.end());
 
     QString data;
-    QFile importedCSV("kategorije.txt");
+    QFile importedCSV("data/kategorije.txt");
     QStringList rowOfData;
     QStringList rowDataFull;
     if (importedCSV.open(QFile::ReadOnly)){
