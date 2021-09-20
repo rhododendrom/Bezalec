@@ -12,7 +12,7 @@ Izpispodatkov::Izpispodatkov(QWidget *parent) : QDialog(parent), ui(new Ui::izpi
     //std::sort(kategorijeItems.begin(),kategorijeItems.end());
 
     QString data;
-    QFile importedCSV("kategorije.txt");
+    QFile importedCSV("../data/kategorije.txt");
     QStringList rowOfData;
     QStringList rowDataFull;
     if (importedCSV.open(QFile::ReadOnly)){
@@ -89,7 +89,7 @@ void Izpispodatkov::on_pushButton_clicked()
 
     QString htmlCode = "<html> <head><meta http-equiv=\"Content-Type\" content=\"text/html; charset=utf-8\"><style>th,td{text-align: center;} table {width:100%;} </style> </head> <body>";
 
-    QFile file("sample1.html");
+    QFile file("../output/sample1.html");
 
     QTextStream data( &file );
 
@@ -170,6 +170,6 @@ void Izpispodatkov::on_pushButton_clicked()
     file.close();
     qDebug() << htmlCode;
 
-    ui->textBrowser->setSource(QUrl("sample1.html"));
+    ui->textBrowser->setSource(QUrl("../output/sample1.html"));
 
 }
